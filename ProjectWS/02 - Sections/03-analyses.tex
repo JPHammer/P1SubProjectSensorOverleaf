@@ -1,0 +1,60 @@
+\chapter{Analyses}
+
+\section{Bevidste fra- og tilvalg}
+
+Valg af kommunikationstype mellem Ard mega og Ard nano
+Hvorfor deler vi signalbehandling ud på Ard Mega og Nano?
+
+\chapter{Tests}
+
+\section{Inductive sensors}
+
+\subsection{Various voltages}
+The purpose of this test, is to map the sensing range of the inductive sensors at various voltages.
+
+\subsubsection{Setup}
+Temperature: 20,1 \textdegree C\\
+Power fed from PSU via power-bridge through each sensor to common GND-rail.
+
+Secondarily from sensor through voltage-limiter - optimized for 25/5 v conversion - to 5v LED, colored respectively red, blue and green and connected individually to common GND-rail.
+
+\subsubsection{Results}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+    \rowcolor{gray!25}
+    Voltage & Sensor 1 & Sensor 2 & Sensor 3 & Average
+\\
+\hline
+    30 & 16 & 17 & 17 & 16,67
+\\
+\hline
+    \rowcolor{gray!25}
+    25 & 16 & 17 & 17 & 16,67
+\\
+\hline
+    20 & 17 & 17 & 17 & 17
+\\
+\hline 
+    \rowcolor{gray!25}
+    15 & 16 & 17 & 17 & 16,67
+\\
+\hline
+    10 & 17 & 17 & 17 & 17
+\\
+\hline
+\end{tabular}
+\end{center}
+
+\subsubsection{Precision}
+Ruler: $ \pm $ 1 mm\\
+Power supply:
+
+\subsubsection{Conclusion}
+
+
+\subsubsection{Follow up tests}
+
+Current at various voltages
+Sensitivity at various voltages
