@@ -1,0 +1,58 @@
+\chapter{Tests}
+
+\section{Firmware}
+
+\subsection{Runtime - signal processing IC}
+
+\subsubsection{Setup}
+Optimally we would have measured the pulse width from the first line of code to the last line of code using an oscilloscope. As a result of the current quarantine, it is not possible to utilize an oscilloscope for the test. Therefore an alternative testing method has been implemented.
+
+To digital pins are set up in the signal processing IC (testPin1HL and testPin2HL). These are connected to en external unit \todo{Create list of hardware and their documentation. Insert link to ArdNano from this chapter, word: "external unit"}. The external unit is programmed to start a counter when the first pin goes in to high state and stop said timer, when the second pin goes in to high state.
+
+The signal processing IC is programmed to set testPin2HL to high state on line 1. On following lines both test pins are set up and finally testPin1HL is set to high state before executing the ICs intended firmware.\\
+This ensures a test, where the timer runs from end to end including the repeat of the (main)loop.
+
+It should be noted that, according to \hyperlink{AppA}{Golam Mostafas experiment}, digitalWrite to high state takes 59 clock cycles and digetalRead takes 50 clock cycles.
+
+
+DigitalWrite (low state): 61 clock cycles
+DigitalWrite (high state): 59 clock cycles
+DigitalRead: 50 clock cycles
+
+
+
+
+\subsubsection{Results}
+
+\subsubsection{Precision}
+
+\subsubsection{Follow-up tests}
+
+
+
+\subsection{Runtime - circuit-security IC}
+
+\subsubsection{Setup}
+Optimally we would have measured the pulse width from the first line of code to the last line of code using an oscilloscope. As a result of the current quarantine, it is not possible to utilize an oscilloscope for the test. Therefore an alternative testing method has been implemented.
+
+To digital pins are set up in the signal processing IC (testPin1HL and testPin2HL). These are connected to en external unit \todo{Create list of hardware and their documentation. Insert link to ArdNano from this chapter, word: "external unit"}. The external unit is programmed to start a counter when the first pin goes in to high state and stop said timer, when the second pin goes in to high state.
+
+The signal processing IC is programmed to set testPin2HL to high state on line 1. On following lines both test pins are set up and finally testPin1HL is set to high state before executing the ICs intended firmware.\\
+This ensures a test, where the timer runs from end to end including the repeat of the (main)loop.
+
+It should be noted that, according to \hyperlink{AppA}{Golam Mostafas experiment}, digitalWrite to high state takes 59 clock cycles and digetalRead takes 50 clock cycles.
+
+
+DigitalWrite (low state): 61 clock cycles
+DigitalWrite (high state): 59 clock cycles
+DigitalRead: 50 clock cycles
+
+
+
+
+\subsubsection{Results}
+
+\subsubsection{Precision}
+
+\subsubsection{Follow-up tests}
+
